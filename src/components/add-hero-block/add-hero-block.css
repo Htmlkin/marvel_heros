@@ -1,0 +1,42 @@
+.addBtn {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 39px 0 0 0;
+    color: #ff5c00;
+}
+
+.add-hero {
+    text-transform: uppercase;
+    font-size: 15pt;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+        'Lucida Sans', Arial, sans-serif;
+}
+
+.btn__wrap {
+    width: 110px;
+    height: auto;
+    text-align: center;
+    cursor: pointer;
+}
+
+.btn__wrap:hover .add-hero {
+    color: #a5a5a5;
+    transition: linear 0.2s;
+}
+
+.add_btn_img {
+    background: url(/src/img/add_circle_outline.png) no-repeat center;
+    width: auto;
+    height: 80px;
+    margin: 0 auto;
+    filter: grayscale(1);
+    opacity: 0.5;
+}
+
+.btn__wrap:hover .add_btn_img {
+    filter: grayscale(0);
+    opacity: 1;
+    transition: linear 0.2s;
+}

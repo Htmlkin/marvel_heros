@@ -1,0 +1,21 @@
+* {
+    box-sizing: border-box;
+}
+
+:active,
+:hover,
+:focus {
+    outline: 0;
+    outline-offset: 0;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Montserrat, sans-serif;
+    /* height: 100vh; */
+    background-image: url(./img/newspaper-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}

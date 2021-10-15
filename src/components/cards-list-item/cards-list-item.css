@@ -1,0 +1,147 @@
+.heroCard {
+    width: 331px;
+    height: 473px;
+    background-color: #ffffff;
+    background-repeat: no-repeat !important;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    margin: 0 10px 20px 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    cursor: pointer;
+    transition: all 0.5s;
+    position: relative;
+}
+
+.heroCard:hover {
+    padding-bottom: 100px;
+    transition: linear 0.3s;
+    box-shadow: 0px 0px 35px rgba(0, 0, 0, 0.8);
+}
+
+.heroName {
+    font-family: Montserrat, sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 26px;
+    color: #ff5c00;
+    text-transform: uppercase;
+}
+
+.props {
+    font-family: Montserrat, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    color: #8b8b8b;
+    margin: 0 0 8px 0;
+}
+
+.propsWrap {
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 0 0 10px 10px;
+}
+
+.heroCard:hover .propsWrap {
+    opacity: 0;
+    transition: linear 0.3s;
+}
+
+.heroCard:hover .deleteHero {
+    opacity: 1;
+}
+
+.description {
+    display: block;
+    margin: 8px 0 0 0;
+    color: rgb(206, 206, 206);
+    text-align: justify;
+}
+
+.tags {
+    font-family: Montserrat, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 9px;
+    line-height: 13px;
+    display: inline-block;
+    background: #f77f0e;
+    border-radius: 5px;
+    padding: 5px;
+    text-transform: uppercase;
+    color: rgb(0, 0, 0);
+    margin: 5px 5px 0 0;
+}
+
+.deleteHero {
+    display: none;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.6);
+    top: 10px;
+    right: 10px;
+    border-radius: 5px;
+    z-index: 999;
+    cursor: pointer;
+    transition: all linear 0.3s;
+    opacity: 0;
+}
+.deleteHero:hover {
+    border-radius: 50px;
+    background: rgba(117, 117, 117, 0.6);
+}
+.crossOne {
+    position: absolute;
+    width: 25px;
+    height: 3px;
+    background: #ff5c00;
+    top: 14.3px;
+    right: 2px;
+    transform: rotate(45deg);
+    transition: all linear 0.3s;
+    display: none;
+}
+.crossTwo {
+    position: absolute;
+    width: 25px;
+    height: 3px;
+    background: #ff5c00;
+    top: 14.3px;
+    right: 2px;
+    transform: rotate(-45deg);
+    transition: all linear 0.3s;
+    display: none;
+}
+
+.cardField {
+    height: 473px;
+    padding-top: 231px;
+}
+
+@media only screen and (max-width: 1200px) {
+    .cardsWrap {
+        max-width: 900px !important;
+        min-width: 600px;
+    }
+}
+
+@media only screen and (max-width: 830px) {
+    .srcHero {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 740px) {
+    .cardsWrap {
+        max-width: 600px !important;
+        min-width: 300px !important;
+    }
+    .srcHero {
+        width: 400px !important;
+        margin: 0 auto;
+    }
+}

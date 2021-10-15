@@ -1,0 +1,59 @@
+.black__cover {
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    scroll-behavior: unset;
+    display: none;
+}
+
+.modal__show {
+    display: block;
+}
+
+.newHero {
+    background: #ffffff;
+    border-radius: 5px;
+    width: 760px;
+    height: 20px;
+    margin: 55px auto 0;
+    font-family: Montserrat, sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 25px;
+    color: #a6a6a6;
+}
+
+.show {
+    height: auto !important;
+    overflow: auto !important;
+    max-height: 452px;
+    overflow: auto;
+}
+
+.add__form .btn {
+    margin-top: 50px;
+}
+
+.add__form {
+    height: 0px;
+    overflow: hidden;
+    transition: max-height 0.5s;
+}
+
+.add__form form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+}
+@media only screen and (max-width: 830px) {
+    .newHero {
+        width: 80%;
+    }
+}

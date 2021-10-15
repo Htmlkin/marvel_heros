@@ -1,0 +1,14 @@
+.header {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.logoTop {
+    margin: 25px 0 0 0;
+    display: block;
+    width: 285px;
+    height: 115px;
+    background: url(/src/img/marvel-logo.png);
+    font-size: 0;
+}
